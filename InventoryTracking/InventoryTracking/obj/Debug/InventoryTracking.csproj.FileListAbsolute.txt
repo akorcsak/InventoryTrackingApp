@@ -72,8 +72,12 @@ C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTra
 C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\bin\Newtonsoft.Json.xml
 C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\bin\Antlr3.Runtime.pdb
 C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\obj\Debug\InventoryTracking.csprojAssemblyReference.cache
 C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\obj\Debug\InventoryTracking.csproj.CoreCompileInputs.cache
 C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\obj\Debug\InventoryTracking.csproj.CopyComplete
 C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\obj\Debug\InventoryTracking.dll
 C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\obj\Debug\InventoryTracking.pdb
+C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\obj\Debug\InventoryTracking.csproj.AssemblyReference.cache
+C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\bin\EntityFramework.dll
+C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\bin\EntityFramework.SqlServer.dll
+C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\bin\EntityFramework.xml
+C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\bin\EntityFramework.SqlServer.xml

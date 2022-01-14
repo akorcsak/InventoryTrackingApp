@@ -1,0 +1,67 @@
+﻿@model IEnumerable<InventoryTracking.Models.InventoryListTable>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="background-table">
+    <table class="table table-hover" id="table-id" style="margin:auto;">
+        <thead>
+            <tr>
+                <th>Item ID</th>
+                <th>Item Name</th>
+                <th>Stock</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @using (Html.BeginForm("InventoryList", "Home"))
+            {
+
+                foreach (var item in Model)
+                {
+
+                    using (Html.BeginForm("InventoryList", "Home"))
+                    {
+
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.Id)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Item_name)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Stock)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Price)</td>
+
+
+
+                        </tr>
+                    }
+
+                }
+
+            }
+
+        </tbody>
+    </table>
+
+    <!--<div class='pagination-container'>
+        <nav>
+            <ul class="pagination">
+
+                <li data-page="prev">
+                    <span> < <span class="sr-only">(current)</span></span>
+                </li>-->
+                <!--	Here the JS Function Will Add the Rows -->
+                <!--<li data-page="next" id="prev">
+                    <span> > <span class="sr-only">(current)</span></span>
+                </li>
+            </ul>
+        </nav>
+    </div>-->
+
+</div>
+
+
+<script>
+
+
+</script>
