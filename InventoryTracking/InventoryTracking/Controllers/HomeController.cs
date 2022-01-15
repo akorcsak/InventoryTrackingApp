@@ -10,8 +10,12 @@ namespace InventoryTracking.Controllers
 {
     public class HomeController : Controller
     {
-        DB _db = new DB();
+        private static DB _db = null;
 
+        public HomeController()
+        {
+            if(_db == null) _db = new DB(); //singleton
+        }
 
         public ActionResult List()
         {
