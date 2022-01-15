@@ -32,3 +32,10 @@ textarea {
     height: 100%;
     background-color: rgba(196, 196, 196, 0.2);
 }
+
+div.pagination-container {
+    display: block;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
