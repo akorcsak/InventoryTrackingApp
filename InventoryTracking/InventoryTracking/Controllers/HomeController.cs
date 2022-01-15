@@ -1,6 +1,7 @@
 ﻿using InventoryTracking.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -97,6 +98,23 @@ namespace InventoryTracking.Controllers
 
             return RedirectToAction("List");   
 
+        }
+
+
+        public ActionResult Export()
+        {
+            try
+            {
+                //StreamWriter sw;
+                //string path = @"~/CSV_File";
+                //sw = new StreamWriter(path + "\\" + "InventoryItems.CSV", true);
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            return null;
         }
     }
 }
