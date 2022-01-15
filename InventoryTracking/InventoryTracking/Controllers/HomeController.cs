@@ -74,5 +74,29 @@ namespace InventoryTracking.Controllers
 
             return RedirectToAction("List");
         }
+
+        [HttpGet]
+        public ActionResult Delete(int Id)
+        {
+            var inventory = _db.InventoryListTables.Where(s => s.Id == Id).FirstOrDefault();
+
+            return View(inventory);
+
+        }
+
+
+        [HttpPost]
+        public ActionResult Delete(InventoryListTable deletedItem)
+        {
+            var q = _db.InventoryListTables;
+
+            var inventoryItem = q.Where(s => s.Id == deletedItem.Id).FirstOrDefault();
+            q.Remove(inventoryItem);
+            _db.SaveChanges();
+
+
+            return RedirectToAction("List");   
+
+        }
     }
 }

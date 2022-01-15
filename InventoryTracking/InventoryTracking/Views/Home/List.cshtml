@@ -4,11 +4,15 @@
     ViewBag.Title = "Inventory";
 }
 
-<h2>Inventory</h2>
+<h2>Inventory List</h2>
 <br />
-<p>
-    @Html.ActionLink("Create New", "Create")
+<p class="col-md-6">
+    @Html.ActionLink("Create New Item", "Create")
 </p>
+<div style="float:right;padding-bottom:10px">
+    <button style="padding:10px;background-color:lightgreen"><b>Export Data to CSV</b></button>
+</div>
+
 <table class="table">
     <tr>
         <th>
