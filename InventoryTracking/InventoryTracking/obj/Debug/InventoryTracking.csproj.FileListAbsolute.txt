@@ -81,3 +81,6 @@ C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTra
 C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\bin\EntityFramework.SqlServer.dll
 C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\bin\EntityFramework.xml
 C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\bin\EntityFramework.SqlServer.xml
+C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\bin\Microsoft.Owin.dll
+C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\bin\Owin.dll
+C:\Users\Andrei\source\repos\InventoryTrackingApp\InventoryTracking\InventoryTracking\bin\Microsoft.Owin.xml
