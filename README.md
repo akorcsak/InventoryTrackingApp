@@ -25,3 +25,25 @@ Basic CRUD functionality and exporting product data to a CSV file.
  - 
 ## List
  - All the inventory items are listed on the main page from the SQL database as the user enters the application. 
+
+# Screenshots
+
+# Technologies Used
+- ASP.NET MVC 5 Framework
+- C#
+- Javascript
+- HTML
+- CSS
+- SQL
+- Deployed using Azure DevOps
+
+# BackEnd Functionality
+A SQL database is used to store the inventory items from the application.
+
+# Running Application
+Open the command line at the preferred location to clone the repository by executing the command below:
+- git clone https://github.com/akorcsak/InventoryTrackingApp.git
+
+Once the repository has been succesfully cloned, open the ImageRepo.sln in Visual Studio and run the application.
+
+The application is also publicly deployed and can be accessed through this link: http://alevel23.asuscomm.com/inventorytracking
