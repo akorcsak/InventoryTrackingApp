@@ -10,8 +10,8 @@
     @Html.ActionLink("Create New Item", "Create")
 </p>
 <div style="float:right;padding-bottom:10px">
-    <button style="padding:10px;background-color:lightgreen"><b>Export Data to CSV</b></button>
-    <input type="button" value="Create" onclick="location.href='@Url.Action("Export", "Home")'" />
+    <a class="btn btn-primary btn-lg" onclick="window.open('@Url.Action("Export", "Home")', '_blank', '')">Download Inventory CSV File</a>
+
 </div>
 
 <table class="table">

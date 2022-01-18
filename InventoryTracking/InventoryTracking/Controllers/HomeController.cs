@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 
@@ -105,20 +106,34 @@ namespace InventoryTracking.Controllers
         }
 
 
+        [HttpGet]
         public ActionResult Export()
         {
-            try
-            {
-                //StreamWriter sw;
-                //string path = @"~/CSV_File";
-                //sw = new StreamWriter(path + "\\" + "InventoryItems.CSV", true);
-            }
+            var modelInventories = from p in _db.InventoryListTables
+                                  orderby p.Id
+                                  descending
+                                  select p;
+            //List<string> stringList = modelInventory.Select().ToList();
 
-            catch (Exception e)
+            MemoryStream stream = null;
+
+            if (modelInventories?.Count() > 0)
             {
-                Console.WriteLine("Exception: " + e.Message);
+                var sb = new StringBuilder();
+                foreach (var modelInventory in modelInventories)
+                {
+                    sb.AppendLine($"{modelInventory.Item_name},{modelInventory.Stock},{modelInventory.Price}");
+                }
+
+                stream = new MemoryStream(Encoding.ASCII.GetBytes(sb.ToString()));
+
             }
-            return null;
+            return new FileStreamResult(stream, "text/plain")
+            {
+                FileDownloadName = "Inventory_List.csv"
+            };
+
         }
+
     }
 }
