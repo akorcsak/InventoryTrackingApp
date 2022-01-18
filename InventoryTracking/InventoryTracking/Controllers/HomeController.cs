@@ -126,8 +126,13 @@ namespace InventoryTracking.Controllers
                 }
 
                 stream = new MemoryStream(Encoding.ASCII.GetBytes(sb.ToString()));
-
             }
+
+            if (stream == null)
+            {
+                stream = new MemoryStream();
+            }
+
             return new FileStreamResult(stream, "text/plain")
             {
                 FileDownloadName = "Inventory_List.csv"
