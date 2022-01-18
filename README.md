@@ -26,6 +26,10 @@ Basic CRUD functionality and exporting product data to a CSV file.
 ## List
  - All the inventory items are listed on the main page from the SQL database as the user enters the application. 
 
+## Export Data to CSV
+ - Select "Download Inventory to CSV File" to download an Excel file with all the data of the inventory items currently stored in the application.
+ - The file name is called "Inventory_List.csv" and will be displayed in the downloads section on the user's computer.
+
 # Screenshots
 
 # Technologies Used
